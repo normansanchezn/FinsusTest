@@ -23,7 +23,10 @@ This project analyzes EcoBici bike-sharing data to gain insights into user behav
 4. Run the Jupyter Notebook: `jupyter notebook analysis.ipynb`
 
 ## Results
-- The average trip duration is calculated to be approximately X minutes.
 - The most used stations are identified along with their usage patterns.
 - Relationships between gender and age of users are explored using visualizations and statistical analysis.
 
+## Other Resources
+- PDF containing the full analysis report.
+- Image files showcasing the graphics generated during the analysis.
+- Script for the second challenge task.
