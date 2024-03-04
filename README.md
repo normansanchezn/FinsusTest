@@ -30,3 +30,4 @@ This project analyzes EcoBici bike-sharing data to gain insights into user behav
 - PDF containing the full analysis report.
 - Image files showcasing the graphics generated during the analysis.
 - Script for the second challenge task.
+- Script for LaTex.
