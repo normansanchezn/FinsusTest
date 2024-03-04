@@ -1,0 +1,198 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Test Data Scientist}
+\author{Norman Sanchez}
+\date{March 2024}
+
+\begin{document}
+
+\section{Most congested stations}
+\subsection{Most congested arrival stations}
+\begin{figure}[h]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{December_2023_most_congested_arrival_stations.png}
+        \caption{Most congested arrival stations in December 2023.}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{November_2023_most_congested_arrival_stations.png}
+        \caption{Most congested arrival stations in November 2023.}
+    \end{minipage}
+\end{figure}
+
+For the first two graphs, I can say that the four most congested arrival stations in both December and November are 271, 027, 064, and 043, but the following places on the podium vary slightly. Many ideas come to mind with that information; from displaying more advertising within the app at these stations to generate more revenue, to simply providing them with more maintenance due to their usage.
+
+\subsection{Most congested withdrawal stations}
+\begin{figure}[h]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{December_2023_most_congested_withdrawal_stations.png}
+        \caption{Most congested withdrawal stations in December 2023.}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{November_2023_most_congested_withdrawal_stations.png}
+        \caption{Most congested withdrawal stations in November 2023.}
+    \end{minipage}
+\end{figure}
+
+The same happens with the departure stations, but there is a variation within the top 4 most frequented places. 271, 027, and 064 are repeated, but 208 appears as one of the stations with the most departures within the usage.
+
+\section{Most frequented routes.}
+\begin{figure}[h]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{December_2023_most_frequented_routes.png}
+        \caption{Most frequented routes in December 2023.}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{November_2023_most_frequented_routes.png}
+        \caption{Most frequented routes in November 2023.}
+    \end{minipage}
+\end{figure}
+
+When comparing the most traveled routes, we realize that there is no determined pattern, and people use Ecobici randomly (or so it seems with just the analysis of these two months; I believe that with more data, this could provide more information allowing me to explore further). It's important to know the least used routes, ask users why they don't use them, and examine the factors that may affect this, such as safety concerns, distance, or simply because the stations or bikes are not in optimal conditions for use.
+
+\section{Traffic at the most congested stations and times.}
+\subsection{Traffic at the most used stations.}
+\begin{figure}[h]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{December_2023_traffic_at_the_most_used_stations.png}
+        \caption{Traffic at the most used station in December 2023.}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{November_2023_traffic_at_the_most_used_stations.png}
+        \caption{Traffic at the most used station in November 2023.}
+    \end{minipage}
+\end{figure}
+It's interesting to note that the most used stations are exactly the same in the top 4 for both the most used arrival and departure stations. This shows complete concordance between them.
+
+In short, it's like double-checking the initial information.
+
+\subsection{Traffic at the most congested stations and times.}
+\begin{figure}[h]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{December_2023_traffic_at_the_most_congested_stations_and_times.png}
+        \caption{Traffic at the most congested stations and times in December 2023.}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{November_2023_traffic_at_the_most_congested_stations_and_times.png}
+        \caption{Traffic at the most congested stations and times in November 2023.}
+    \end{minipage}
+\end{figure}
+
+We can significantly observe that the most used time for Ecobici is at 18:00 hours, which makes a lot of sense since it's the time when people in Mexico City finish work. As a secondary point, analyzing averages, we can see that 08:00 hours ranks second. This could imply that the working class is the primary user of this eco-friendly mode of transportation.
+
+
+\section{Other findings.}
+\subsection{Bike wear per month.}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Bicycle & Amount \\
+\hline
+4025813 & 367 \\
+8263204 & 346 \\
+4134052 & 342 \\
+5228937 & 342 \\
+8314858 & 342 \\
+2121424 & 339 \\
+6814925 & 338 \\
+4243093 & 336 \\
+3812344 & 336 \\
+6611925 & 335 \\
+\hline
+\end{tabular}
+\caption{Bike wear in December 2023}
+\label{tab:bicicletas}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Bicycle & Amount \\
+\hline
+6749162 & 305 \\
+3636958 & 303 \\
+5057187 & 299 \\
+7522733 & 298 \\
+7528870 & 291 \\
+7014293 & 290 \\
+7517303 & 288 \\
+6365308 & 288 \\
+7954696 & 287 \\
+4154332 & 287 \\
+\hline
+\end{tabular}
+\caption{Bike wear in November 2023}
+\label{tab:bicicletas}
+\end{table}
+
+I conducted the analysis of the most frequently used bicycles within the system since it is important to provide maintenance to ensure the success of this project continues moving forward.
+
+Here we can see a small quantity, but we can start with these and then proceed with the rest to ensure we always maintain optimal performance.
+
+\subsection{Relationships between gender and age of users}
+\begin{figure}[h]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{December_2023_explore_relationships_between_gender_and_age_of_users.png}
+        \caption{Relationships between gender and age of users in December 2023.}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{November_2023_explore_relationships_between_gender_and_age_of_users.png}
+        \caption{Relationships between gender and age of users in November 2023.}
+    \end{minipage}
+\end{figure}
+
+Creating a histogram helped me visualize how ages are distributed within each gender and whether there are significant differences. I observed that the majority of users are male and fall within the 20-40 age range, with very few seniors using the system. This leads me to believe that something still doesn't quite match up, perhaps it's the complexity of the app or that the population isn't as large as adults between 20-40 years old. It's clear to me that gender identity plays an important role here, as we can see the minimal separation with "Other gender".
+
+Other aspects to analyze could include: Weekend Usage, Seasonal Trends, User Feedback, Promotional Strategies utilizing tools like Appsflyer, and Infrastructure Improvement. However, to accomplish this, I will need more data and additional time. Understanding the objectives of the stakeholders is also crucial.
+
+\section{Estimation of Infants aged 0-6 Months in Álvaro Obregón}
+Reasoning:
+If we want to estimate the number of infants aged 0 to 6 months in each Basic Geostatistical Area (AGEB) of the Álvaro Obregón delegation, we can think as follows:
+
+\begin{enumerate}
+    \item Demographic Data ($D$): We collect demographic data from governmental sources, household surveys, or recent censuses providing information on population distribution by age in Álvaro Obregón.
+
+    \item Birth Rate ($T$): We utilize estimated birth rates for the region and historical birth data to calculate the expected number of births within a given period.
+
+    \item Age Distribution ($P$): We consider the age distribution of the general population and apply this distribution to estimate the number of infants aged 0 to 6 months in each AGEB.
+
+    \item Infant Estimation ($B$): We use the following formula to estimate the number of infants aged 0 to 6 months in each AGEB:
+
+    \[B_{\text{AGEB}} = D_{\text{AGEB}} \times T_{\text{region}} \times P_{0-6} \]
+
+    where:
+    \begin{itemize}
+        \item $B_{\text{AGEB}}$ is the estimated number of infants aged 0 to 6 months in the AGEB.
+        \item $D_{\text{AGEB}}$ is the total population of the AGEB.
+        \item $T_{\text{region}}$ is the estimated birth rate for the region.
+        \item $P_{0-6}$ is the proportion of the population within the 0 to 6 months age range.
+    \end{itemize}
+\end{enumerate}
+\end{document}
